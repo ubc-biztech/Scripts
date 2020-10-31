@@ -144,7 +144,7 @@ def upload_to_dynamo(response):
 
     # Initialize DynamoDb client and assign it the table
     dynamodb = client.resource('dynamodb')
-    table = dynamodb.Table('biztechMembership2021')
+    table = dynamodb.Table('biztechMemberships2021')
 
     # Using a batch writer to batch the put_item requests
     with table.batch_writer() as batch:
